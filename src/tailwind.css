@@ -1,0 +1,16 @@
+/* src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-200;
+  }
+  .input {
+    @apply border p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+  .card {
+    @apply border rounded-lg p-4 mb-4 bg-white shadow hover:shadow-lg transition duration-300;
+  }
+}
